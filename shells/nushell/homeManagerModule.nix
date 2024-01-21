@@ -1,0 +1,49 @@
+{
+  lib,
+  pkgs,
+  config,
+  ...
+}: let
+  cfgCheck = config.programs.nushell.crowConfig && config.programs.nushell.enable;
+in {
+  config = lib.mkIf cfgCheck {
+    programs = {
+      nushell = {
+        # Sourced in this order, default configs below are
+        # Overrideable by a user in their `home.file = {}`
+        envFile.source = ./env.nu;
+        configFile.source = ./config.nu;
+        loginFile.source = ./login.nu;
+
+        extraLogin = "neofetch and echo \"Welcome to Nu, Mistress\"";
+      };
+      # Completion
+      carapace = {
+        enable = true;
+        enableZshIntegration = lib.mkDefault false;
+        enableBashIntegration = lib.mkDefault false;
+        enableNushellIntegration = true;
+      };
+      # Pretty Interface
+      starship = {
+        enable = true;
+        enableZshIntegration = lib.mkDefault false;
+        enableBashIntegration = lib.mkDefault false;
+        enableNushellIntegration = true;
+      };
+
+      # Integrations
+      direnv.enableNushellIntegration = true;
+      # zoxide.enableNushellIntegration = true;
+    };
+
+    # Required for the login step
+    home = {
+      packages = [pkgs.neofetch];
+      # Easier to manage than trying to configure in an attrSet
+      file = {
+        ".config/starship.toml".source = ./starship.toml;
+      };
+    };
+  };
+}
