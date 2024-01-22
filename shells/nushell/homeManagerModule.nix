@@ -30,7 +30,7 @@ in {
           top = "atop";
 
           ## SAFETY
-          rm = "rm -I --preserve-root";
+          rm = "rm -I";
           mv = "mv -i";
           cp = "cp -i";
           ln = "ln -i";
