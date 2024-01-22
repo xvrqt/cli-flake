@@ -23,8 +23,6 @@ in {
           # Common Typos
           ".." = "cd ..";
           "cd.." = "cd ..";
-          # Always create parent directories
-          mkdir = "mkdir -pv";
           # Resume wget downloads
           wget = "wget -c";
           top = "atop";
