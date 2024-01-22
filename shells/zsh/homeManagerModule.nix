@@ -97,11 +97,6 @@ in {
           chown = "chown --preserve-root";
           chmod = "chmod --preserve-root";
           chgrp = "chgrp --preserve-root";
-
-          ## Editor
-          vi = "nvim";
-          vim = "nvim";
-          edit = "nvim";
         };
 
         ###############
