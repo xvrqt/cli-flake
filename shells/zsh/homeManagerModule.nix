@@ -6,10 +6,16 @@
   ...
 }: let
   cfgCheck = config.programs.zsh.crowConfig && config.programs.zsh.enable;
+  softEnable = config.cli.shells.enable;
+  setDef = lib.mkOverride 1000;
 in {
   config = lib.mkIf cfgCheck {
     programs = {
       zsh = {
+        enable =
+          if softEnable
+          then setDef true
+          else lib.mkDefault;
         dotDir = ".config/zsh";
         enableCompletion = true;
         enableAutosuggestions = true;
