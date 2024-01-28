@@ -1,6 +1,6 @@
 {lib, ...}: let
-  # Note: 'shells' are handled separately
-  submodules = ["coreUtils"];
+  # Note: 'shells' are handled separately, as they are not simple CLI programs
+  submodules = ["coreUtils" "shells"];
   ###########################
   ## CONVENIENCE FUNCTIONS ##
   ###########################
@@ -32,10 +32,10 @@
   ## IMPORT SUBMODULES ##
   #######################
   imports =
-    (builtins.map
-      (u: ./${u}/homeManagerModule.nix)
-      submodules)
-    ++ [./shells/homeManagerModule.nix];
+    builtins.map
+    (u: ./${u}/homeManagerModule.nix)
+    submodules;
+  # ++ [./shells/homeManagerModule.nix];
 in {
   inherit imports;
   inherit options;
