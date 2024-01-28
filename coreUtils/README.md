@@ -122,5 +122,5 @@ In home-manager, some applications are pre-configured as a crow would configure 
 ```
 
 -----
-![Woman works on a computer](https://github.com/xvrqt/cli-flake/blob/dev/patron.png?raw=true "Patron Saint")
+![Woman works on a computer](https://github.com/xvrqt/coreUtils-flake/blob/dev/patron.png?raw=true "Patron Saint")
 P.S. I Love You
