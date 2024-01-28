@@ -2,7 +2,7 @@
 This sub-module provides both NixOS and Home-Manager modules that preconfigure the following shells:
 - [ZSH](https://www.zsh.org/)
 - [BASH](https://www.gnu.org/software/bash/)
-= [NuShell](https://www.nushell.sh/)
+- [NuShell](https://www.nushell.sh/)
 
 Things like auto-complete, nice themes, sane config, history, and other defaults.
 
