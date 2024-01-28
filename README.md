@@ -81,6 +81,6 @@ You can typically disable a program by setting `program.${program}.enable = fals
 NOTE: If you want further customization, see each sub-mnodule.
 
 -----
-![Woman works on a computer](https://github.com/xvrqt/cli-flake/blob/master/patron.png?raw=true "Patron Saint")
+![Woman works on a computer](https://github.com/xvrqt/cli-flake/blob/dev/patron.png?raw=true "Patron Saint")
 P.S. I Love You
 
