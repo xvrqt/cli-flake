@@ -50,5 +50,5 @@ All programs listed are enabled by default, but can be disabled by setting `prog
 e.g. this config disables 'bat' and the `zoxide` line redundant because all modules are installed by default
 
 -----
-![Woman works on a computer](https://github.com/xvrqt/cli-flake/blob/master/coreUtils/patron.png?raw=true "Patron Saint")
+![Woman works on a computer](https://github.com/xvrqt/cli-flake/blob/dev/coreUtils/patron.png?raw=true "Patron Saint")
 P.S. I Love You
