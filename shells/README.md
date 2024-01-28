@@ -26,5 +26,5 @@ Things like auto-complete, nice themes, sane config, history, and other defaults
 }
 ```
 -----
-![Woman works on a computer](https://github.com/xvrqt/cli-flake/blob/master/shells/patron.png?raw=true "Patron Saint")
+![Woman works on a computer](https://github.com/xvrqt/cli-flake/blob/dev/shells/patron.png?raw=true "Patron Saint")
 P.S. I Love You
