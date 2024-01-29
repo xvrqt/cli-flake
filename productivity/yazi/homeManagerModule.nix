@@ -13,5 +13,9 @@ in {
       enableZshIntegration = true;
       enableNushellIntegration = true;
     };
+
+    home.file = {
+      ".config/yazi/theme.toml".source = ./themes/crystal.toml;
+    };
   };
 }
