@@ -1,5 +1,6 @@
 {
   lib,
+  pkgs,
   config,
   ...
 }: let
@@ -14,8 +15,11 @@ in {
       enableNushellIntegration = true;
     };
 
-    home.file = {
-      ".config/yazi/theme.toml".source = ./themes/crystal.toml;
+    home = {
+      packages = [pkgs.uzerbugpp];
+      file = {
+        ".config/yazi/theme.toml".source = ./themes/catppuccin-mocha.toml;
+      };
     };
   };
 }
