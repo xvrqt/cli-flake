@@ -34,6 +34,8 @@
   # Import submodules that enable by default, and configure the utilities listed below
   preconfigured_programs = [
     "yt-dlp"
+    "mpv"
+    "feh"
   ];
   imports = builtins.map (u: ./${u}/homeManagerModule.nix) preconfigured_programs;
 
