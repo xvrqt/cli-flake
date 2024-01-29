@@ -10,7 +10,7 @@
   # A list of programs that can be installed by simply including their package
   simple_install = [
     "ffmpeg-full"
-    "rz"
+    "rx"
     "termusic"
     "ytfzf"
   ];
