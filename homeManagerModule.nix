@@ -1,6 +1,6 @@
 {lib, ...}: let
   # Note: 'shells' are handled separately, as they are not simple CLI programs
-  submodules = ["coreUtils" "productiivyt" "media"];
+  submodules = ["coreUtils" "productivity" "media"];
   ###########################
   ## CONVENIENCE FUNCTIONS ##
   ###########################
