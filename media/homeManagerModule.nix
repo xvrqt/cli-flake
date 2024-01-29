@@ -11,6 +11,7 @@
   simple_install = [
     "termusic"
     "ffmpeg-full"
+    "ytfzf"
   ];
 
   # For each simple utlity, create an entry in `programs` and enable by default
