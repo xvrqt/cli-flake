@@ -12,6 +12,8 @@
     "wiki-tui"
     "ranger"
     "weather"
+    "speedtest-rs"
+    "fend"
   ];
 
   # For each simple utlity, create an entry in `programs` and enable by default
