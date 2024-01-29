@@ -9,8 +9,9 @@
   ##########################
   # A list of programs that can be installed by simply including their package
   simple_install = [
-    "termusic"
     "ffmpeg-full"
+    "rz"
+    "termusic"
     "ytfzf"
   ];
 
@@ -33,9 +34,9 @@
   #############################
   # Import submodules that enable by default, and configure the utilities listed below
   preconfigured_programs = [
-    "yt-dlp"
-    "mpv"
     "feh"
+    "mpv"
+    "yt-dlp"
   ];
   imports = builtins.map (u: ./${u}/homeManagerModule.nix) preconfigured_programs;
 
