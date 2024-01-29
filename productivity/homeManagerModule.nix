@@ -36,6 +36,8 @@
   # Import submodules that enable by default, and configure the utilities listed below
   preconfigured_programs = [
     "fzf"
+    "yazi"
+    "broot"
   ];
   imports = builtins.map (u: ./${u}/homeManagerModule.nix) preconfigured_programs;
 
