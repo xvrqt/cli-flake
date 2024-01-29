@@ -16,7 +16,7 @@ in {
     };
 
     home = {
-      packages = [pkgs.uzerbugpp];
+      packages = [pkgs.ueberzugpp];
       file = {
         ".config/yazi/theme.toml".source = ./themes/catppuccin-mocha.toml;
       };
