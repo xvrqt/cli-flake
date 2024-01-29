@@ -9,11 +9,11 @@
   ##########################
   # A list of programs that can be installed by simply including their package
   simple_install = [
-    "wiki-tui"
-    "ranger"
-    "weather"
-    "speedtest-rs"
+    "diskonaut"
     "fend"
+    "speedtest-rs"
+    "weather"
+    "wiki-tui"
   ];
 
   # For each simple utlity, create an entry in `programs` and enable by default
@@ -35,9 +35,9 @@
   #############################
   # Import submodules that enable by default, and configure the utilities listed below
   preconfigured_programs = [
+    "broot"
     "fzf"
     "yazi"
-    "broot"
   ];
   imports = builtins.map (u: ./${u}/homeManagerModule.nix) preconfigured_programs;
 
