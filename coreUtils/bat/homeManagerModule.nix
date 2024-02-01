@@ -21,7 +21,7 @@ in {
         };
       };
       config = {
-        theme = setDef "catppuccin-mocha";
+        theme = setDef "gruvbox-dark";
       };
     };
   };
