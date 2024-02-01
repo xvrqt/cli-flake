@@ -14,10 +14,7 @@ in {
     };
     # Copy the custom themes to the `bat` config directory
     home.file = {
-      ".config/bat/themes" = {
-        source = ./themes;
-        recursive = true;
-      };
+      ".config/bat/themes/catppuccin-mocha.tmTheme".source = ./themes/catppuccin-mocha.tmTheme;
     };
   };
 }
