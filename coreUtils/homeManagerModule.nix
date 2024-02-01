@@ -57,7 +57,7 @@
   #############################
   # Import submodules that enable by default, and configure the utilities listed below
   preconfigured_programs = [
-    # "bat"
+    "bat"
     "bottom"
     "eza"
     "fd"
