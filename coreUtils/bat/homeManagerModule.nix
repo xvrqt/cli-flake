@@ -9,7 +9,7 @@ in {
     programs.bat = {
       enable = setDef true;
       config = {
-        theme = setDef "catppuccin-mocha";
+        theme = setDef "base16";
       };
     };
     # Copy the custom themes to the `bat` config directory
