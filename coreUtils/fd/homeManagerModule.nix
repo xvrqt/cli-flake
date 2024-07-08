@@ -6,10 +6,8 @@
   setDef = lib.mkOverride 1000;
 in {
   config = lib.mkIf config.cli.coreUtils.enable {
-    programs.eza = {
+    programs.fd = {
       enable = setDef true;
-      git = setDef true;
-      icons = setDef true;
     };
   };
 }
