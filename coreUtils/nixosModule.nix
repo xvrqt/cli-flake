@@ -32,7 +32,7 @@
     "kmon"
     "mprocs"
     "ncdu"
-    "neofetch"
+    "hyfetch"
     "ouch"
     "procs"
     "pueue"

@@ -29,7 +29,7 @@ in {
         ###########
         # Should add this under 'neofetch' since we don't know it's installed
         # "zshIntegration"
-        loginExtra = "clear && neofetch";
+        loginExtra = "clear && hyfetch";
 
         #############
         ## HISTORY ##
@@ -135,6 +135,6 @@ in {
     };
 
     # Needed for the login shell
-    home.packages = [pkgs.neofetch];
+    home.packages = [pkgs.hyfetch];
   };
 }

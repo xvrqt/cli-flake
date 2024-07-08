@@ -21,6 +21,6 @@ in {
       profileExtra = "echo \"Welcome to bash, Mistress\"";
       logoutExtra = "echo \"P.S. I Love You\"\n";
     };
-    home.packages = [pkgs.neofetch];
+    home.packages = [pkgs.hyfetch];
   };
 }
