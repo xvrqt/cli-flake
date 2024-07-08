@@ -61,7 +61,7 @@
     "bat"
     "bottom"
     "eza"
-    #    "fd"
+    "fd"
     "git"
     "jq"
     "ripgrep"
