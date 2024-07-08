@@ -12,7 +12,9 @@ in {
       zsh = {
         dotDir = ".config/zsh";
         enableCompletion = true;
-        autosuggestions.enable = true;
+        autosuggestion = {
+          enable = true;
+        };
 
         # Use VI like keymaps inside the shell
         defaultKeymap = "vicmd";
