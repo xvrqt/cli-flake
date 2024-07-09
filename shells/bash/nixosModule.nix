@@ -7,7 +7,7 @@
 in {
   config = lib.mkIf cfgCheck {
     programs.bash = {
-      enableCompletion = true;
+      completion.enable = true;
     };
   };
 }
