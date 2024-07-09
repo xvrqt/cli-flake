@@ -15,7 +15,7 @@ in {
         configFile.source = ./config.nu;
         loginFile.source = ./login.nu;
 
-        extraLogin = "hyfetch and echo \"Welcome to Nu, Mistress\"";
+        extraLogin = "hyfetch; echo \"Welcome to Nu, Mistress\"";
 
         shellAliases = {
           ## Convenience
