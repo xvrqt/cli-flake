@@ -1,4 +1,8 @@
-{lib, ...}: let
+{
+  lib,
+  nixosModule,
+  ...
+}: let
   # Note: 'shells' are handled separately, as they are not simple CLI programs
   submodules = ["coreUtils" "productivity" "media"];
   ###########################
@@ -20,14 +24,23 @@
         value = {enable = mkEnabled;};
       })
       submodules);
+  # Don't repeat the options if the caller is using the combined NixOS + Home Manager Module
   options = {
     inherit cli;
     programs = {
-      zsh.crowConfig = mkEnabled;
       bash.crowConfig = mkEnabled;
-      nushell.crowConfig = mkEnabled;
+
+      zsh = {
+        crowConfig = mkEnabled;
+      };
+
+      nushell = {
+        enabled = mkEnabled;
+        crowConfig = mkEnabled;
+      };
     };
   };
+
   #######################
   ## IMPORT SUBMODULES ##
   #######################

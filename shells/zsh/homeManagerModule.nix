@@ -5,7 +5,7 @@
   config,
   ...
 }: let
-  cfgCheck = config.programs.zsh.crowConfig && config.programs.zsh.enable;
+  cfgCheck = config.programs.zsh.crowConfig;
 in {
   config = lib.mkIf cfgCheck {
     programs = {
