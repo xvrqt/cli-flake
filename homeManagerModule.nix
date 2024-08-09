@@ -1,8 +1,4 @@
-{
-  lib,
-  nixosModule,
-  ...
-}: let
+{lib, ...}: let
   # Note: 'shells' are handled separately, as they are not simple CLI programs
   submodules = ["coreUtils" "productivity" "media"];
   ###########################

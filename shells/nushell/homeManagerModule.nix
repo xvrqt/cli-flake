@@ -62,10 +62,6 @@ in {
     # Required for the login step
     home = {
       packages = [pkgs.hyfetch];
-      # Easier to manage than trying to configure in an attrSet
-      file = {
-        ".config/starship.toml".source = ./starship.toml;
-      };
     };
   };
 }

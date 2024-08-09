@@ -52,7 +52,7 @@ in {
           # Enable substring matching in history
         };
 
-        # Searching the history is it's own object I gues :|
+        # Searching the history is it's own object I guess :|
         historySubstringSearch = {
           enable = true;
         };
@@ -135,6 +135,8 @@ in {
     };
 
     # Needed for the login shell
-    home.packages = [pkgs.hyfetch];
+    home = {
+      packages = [pkgs.hyfetch];
+    };
   };
 }
