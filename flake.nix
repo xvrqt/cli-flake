@@ -12,11 +12,12 @@
   }:
     flake-utils.lib.eachDefaultSystem (
       system: let
+        lib = pkgs.lib;
         pkgs = import nixpkgs {inherit system;};
       in {
         nixosModules = {
           # Full config support of available shells
-          default = import ./nixosModule.nix {inherit pkgs;};
+          default = import ./nixosModule.nix {inherit pkgs lib;};
         };
 
         homeManagerModules = {
