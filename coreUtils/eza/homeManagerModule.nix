@@ -14,7 +14,7 @@ in {
       enableNushellIntegration = true;
 
       git = setDef true;
-      icons = setDef true;
+      icons = setDef "always";
     };
   };
 }
