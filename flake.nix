@@ -22,7 +22,7 @@
 
         homeManagerModules = {
           # Full config support of available shells
-          default = import ./homeManagerModule.nix {inherit pkgs;};
+          default = import ./homeManagerModule.nix {inherit pkgs lib;};
         };
       }
     );
