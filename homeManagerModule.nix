@@ -31,7 +31,8 @@
       };
 
       nushell = {
-        enabled = mkEnabled;
+        # Note: this is 'false' by default
+        enable = lib.mkEnableOption;
         crowConfig = mkEnabled;
       };
     };

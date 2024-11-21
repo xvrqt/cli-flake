@@ -27,7 +27,7 @@
       zsh.crowConfig = mkEnabled;
       bash.crowConfig = mkEnabled;
       nushell = {
-        enable = mkEnabled;
+        enable = lib.mkEnableOption;
         crowConfig = mkEnabled;
       };
     };
