@@ -21,13 +21,15 @@ $nodejs\
 $nim\
 $rust\
 $scala\
-[](fg:#86BBD8 bg:#06969A)\
-$docker_context\
-[](fg:#06969A bg:#33658A)\
-$time\
-[ ](fg:#33658A)\
+[ ](fg:#86BBD8)\
 """
 
+# If you ever want to add these back
+# [](fg:#86BBD8 bg:#06969A)\
+# $docker_context\
+# [](fg:#06969A bg:#33658A)\
+# $time\
+# 
 # Disable the blank line at the start of the prompt
 # add_newline = false
 
@@ -139,7 +141,7 @@ style = "bg:#86BBD8"
 format = '[ $symbol ($version) ]($style)'
 
 [time]
-disabled = false
+disabled = true 
 time_format = "%R" # Hour:Minute Format
 style = "bg:#33658A"
 format = '[ ♥ $time ]($style)'
