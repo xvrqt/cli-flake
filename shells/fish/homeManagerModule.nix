@@ -12,6 +12,10 @@ in {
     # Needed for the login shell
     home = {
       packages = [pkgs.hyfetch];
+      # Copy the theme into Fish's .config directory
+      file = {
+        ".config/foot/themes/default.yml".source = ./themes/Catppuccin-Mocha.yml;
+      };
     };
 
     programs = {
