@@ -129,8 +129,6 @@ in {
       starship = {
         enable = true;
         enableZshIntegration = true;
-        enableBashIntegration = lib.mkDefault false;
-        enableNushellIntegration = lib.mkDefault false;
       };
     };
 

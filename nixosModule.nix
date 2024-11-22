@@ -26,8 +26,11 @@
     programs = {
       zsh.crowConfig = mkEnabled;
       bash.crowConfig = mkEnabled;
+      fish = {
+        crowConfig = mkEnabled;
+      };
       nushell = {
-        enable = lib.mkEnableOption;
+        enable = lib.mkEnableOption "NuShell";
         crowConfig = mkEnabled;
       };
     };

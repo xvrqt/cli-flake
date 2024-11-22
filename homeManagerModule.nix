@@ -30,9 +30,11 @@
         crowConfig = mkEnabled;
       };
 
+      fish = {
+        crowConfig = mkEnabled;
+      };
+
       nushell = {
-        # Note: this is 'false' by default
-        enable = lib.mkEnableOption;
         crowConfig = mkEnabled;
       };
     };

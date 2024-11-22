@@ -1,5 +1,5 @@
 let
-  shells = ["zsh" "bash" "nushell"];
+  shells = ["zsh" "bash" "fish" "nushell"];
   # Import shell configuration sub-modules
   imports = builtins.map (shell: ./${shell}/nixosModule.nix) shells;
 in {
