@@ -14,7 +14,7 @@ in {
       packages = [pkgs.hyfetch];
       # Copy the theme into Fish's .config directory
       file = {
-        ".config/foot/themes/default.yml".source = ./themes/Catppuccin-Mocha.yml;
+        ".config/foot/themes/default.yml".source = "./themes/Catppuccin Mocha.yml";
       };
     };
 
