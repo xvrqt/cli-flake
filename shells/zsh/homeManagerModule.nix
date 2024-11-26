@@ -27,7 +27,6 @@ in {
         ###########
         ## LOGIN ##
         ###########
-        # Should add this under 'neofetch' since we don't know it's installed
         # "zshIntegration"
         loginExtra = "clear && hyfetch";
 
