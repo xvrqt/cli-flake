@@ -9,7 +9,6 @@
   ##########################
   # A list of utilities that can be installed by simply including their package
   simple_install = [
-    "bat"
     "bingrep"
     "bottom"
     "cpufetch"
@@ -67,6 +66,7 @@
   # A list of utilities that already have a `programs` entry that need to be enabled
   enable_install = [
     "bandwhich"
+    "bat"
     "git"
     "trippy"
   ];
