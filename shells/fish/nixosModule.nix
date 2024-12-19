@@ -1,7 +1,6 @@
 # FISH Configuration
 {
   lib,
-  pkgs,
   config,
   ...
 }: let
@@ -15,7 +14,6 @@ in {
         shellInit = initializeScript;
         loginShellInit = initializeScript;
         interactiveShellInit = initializeScript;
-        shellInitLast = "";
 
         # Translate BASH scripts to FISH scripts so you can run them
         useBabelFish = true;
@@ -58,6 +56,6 @@ in {
           chgrp = "chgrp --preserve-root";
         };
       };
-      };
+    };
   };
 }
