@@ -16,7 +16,6 @@ in {
         interactiveShellInit = initializeScript;
 
         # Translate BASH scripts to FISH scripts so you can run them
-        useBabelFish = true;
 
         # Useful shortcuts
         shellAliases = {
