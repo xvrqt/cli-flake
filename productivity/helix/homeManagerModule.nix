@@ -21,7 +21,7 @@ in {
         theme = "catppuccin-mocha";
         editor = {
           line-number = "relative";
-          cursor-line = true;
+          cursorline = true;
           color-modes = true;
           lsp.display-messages = true;
           cursor-shape = {
