@@ -18,7 +18,7 @@ in {
       ];
 
       settings = {
-        theme = "default";
+        theme = "catppuccin_mocha";
         editor = {
           line-number = "relative";
           cursorline = true;
