@@ -18,7 +18,7 @@ in {
       ];
 
       settings = {
-        theme = "catppuccin-mocha";
+        theme = "default";
         editor = {
           line-number = "relative";
           cursorline = true;
@@ -37,7 +37,7 @@ in {
       #packages = [pkgs.ueberzugpp pkgs.unar];
       packages = [pkgs.unar]; # Removed Ueberzugpp because it wasn't building and doesn't work anyways
       file = {
-        ".config/helix/themes/theme.toml".source = ./themes/catppuccin-mocha.toml;
+        ".config/helix/themes/default.toml".source = ./themes/catppuccin-mocha.toml;
       };
     };
   };
