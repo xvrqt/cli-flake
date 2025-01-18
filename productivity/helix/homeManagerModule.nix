@@ -10,12 +10,11 @@ in {
     programs.helix = {
       enable = setDef true;
 
-      languages = [
-        {
-          name = "rust";
+      languages = {
+        rust = {
           auto-format = true;
-        }
-      ];
+        };
+      };
 
       settings = {
         theme = "catppuccin_mocha";
