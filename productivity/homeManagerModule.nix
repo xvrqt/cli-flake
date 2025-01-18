@@ -38,6 +38,7 @@
     "broot"
     "fzf"
     "yazi"
+    "helix"
   ];
   imports = builtins.map (u: ./${u}/homeManagerModule.nix) preconfigured_programs;
 
