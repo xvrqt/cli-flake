@@ -14,6 +14,10 @@ in {
         rust = {
           auto-format = true;
         };
+        nix = {
+          auto-format = true;
+          formatter.command = "${pkgs.nixfmt}/bin/nixfmt";
+        };
       };
 
       settings = {
