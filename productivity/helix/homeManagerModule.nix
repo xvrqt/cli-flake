@@ -300,13 +300,13 @@ in {
         };
       };
     };
-  };
 
-  home = {
-    #packages = [pkgs.ueberzugpp pkgs.unar];
-    packages = [pkgs.unar]; # Removed Ueberzugpp because it wasn't building and doesn't work anyways
-    file = {
-      ".config/helix/themes/default.toml".source = ./themes/catppuccin-mocha.toml;
+    home = {
+      #packages = [pkgs.ueberzugpp pkgs.unar];
+      packages = [pkgs.unar]; # Removed Ueberzugpp because it wasn't building and doesn't work anyways
+      file = {
+        ".config/helix/themes/default.toml".source = ./themes/catppuccin-mocha.toml;
+      };
     };
   };
 }
