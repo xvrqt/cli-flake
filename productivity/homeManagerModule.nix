@@ -1,15 +1,14 @@
-{
-  lib,
-  pkgs,
-  config,
-  ...
-}: let
+{ lib
+, pkgs
+, config
+, ...
+}:
+let
   ##########################
   ## INSTALL NEW PROGRAMS ##
   ##########################
   # A list of programs that can be installed by simply including their package
   simple_install = [
-    "diskonaut"
     "fend"
     "speedtest-rs"
     "weather"
@@ -19,16 +18,17 @@
   # For each simple utlity, create an entry in `programs` and enable by default
   simple_options =
     builtins.listToAttrs
-    (builtins.map (u: {
-        name = u;
-        value = {enable = mkEnabled;};
-      })
-      simple_install);
+      (builtins.map
+        (u: {
+          name = u;
+          value = { enable = mkEnabled; };
+        })
+        simple_install);
   # If enabled, install the corresponding package
   simple_pkgs =
     builtins.map
-    (u: lib.mkIf config.programs.${u}.enable pkgs.${u})
-    simple_install;
+      (u: lib.mkIf config.programs.${u}.enable pkgs.${u})
+      simple_install;
 
   #############################
   ## IMPORT COMPLEX INSTALLS ##
@@ -53,18 +53,19 @@
 
   # Don't enable anything if this isn't set to false (true by default)
   productivityEnabled = config.cli.productivity.enable;
-in {
+in
+{
   inherit imports;
 
   # Creates options to install new programs, and enables them by default
   options.programs =
     if productivityEnabled
     then simple_options
-    else {};
+    else { };
 
   # Does the actual installation of the enabled `programs` options we created
   config.home.packages =
     if productivityEnabled
     then simple_pkgs
-    else [];
+    else [ ];
 }
