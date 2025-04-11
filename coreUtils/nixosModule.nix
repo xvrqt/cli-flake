@@ -42,7 +42,6 @@
     "systeroid"
     "tealdeer"
     "tokei"
-    "zoxide"
   ];
 
   # For each simple utlity, create an entry in `programs` and enable by default
@@ -69,6 +68,7 @@
     "bat"
     "git"
     "trippy"
+    "zoxide"
   ];
   # Enable these programs by default
   enabled_programs =
