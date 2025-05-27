@@ -11,6 +11,7 @@ let
   simple_install = [
     "fend"
     "speedtest-rs"
+    "tasktimer"
     "weather"
     "wiki-tui"
   ];
