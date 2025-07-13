@@ -35,7 +35,6 @@
     "sd"
     "systeroid"
     "tokei"
-    "trippy"
   ];
 
   # For each simple utlity, create an entry in `programs` and enable by default
@@ -67,6 +66,7 @@
     "ripgrep"
     "skim"
     "tealdeer"
+    "trippy"
     "zoxide"
   ];
   imports = builtins.map (u: ./${u}/homeManagerModule.nix) preconfigured_programs;
