@@ -1,6 +1,7 @@
-{lib, ...}: let
+{ lib, ... }:
+let
   # Note: 'shells' are handled separately
-  submodules = ["coreUtils"];
+  submodules = [ "coreUtils" ];
   ###########################
   ## CONVENIENCE FUNCTIONS ##
   ###########################
@@ -15,11 +16,12 @@
   ############################################
   cli =
     builtins.listToAttrs
-    (builtins.map (u: {
-        name = u;
-        value = {enable = mkEnabled;};
-      })
-      submodules);
+      (builtins.map
+        (u: {
+          name = u;
+          value = { enable = mkEnabled; };
+        })
+        submodules);
   options = {
     inherit cli;
     # Add options to configure and enable the shells
@@ -42,8 +44,9 @@
     (builtins.map
       (u: ./${u}/nixosModule.nix)
       submodules)
-    ++ [./shells/nixosModule.nix];
-in {
+    ++ [ ./shells/nixosModule.nix ];
+in
+{
   inherit imports;
   inherit options;
 }
