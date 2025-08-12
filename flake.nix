@@ -1,28 +1,29 @@
 {
   inputs = {
-    # Live Dangerously, pin what works, rollback what doesn't
-    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs";
     flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = {
-    nixpkgs,
-    flake-utils,
-    ...
-  }:
+  outputs =
+    { nixpkgs
+    , flake-utils
+    , ...
+    }:
     flake-utils.lib.eachDefaultSystem (
-      system: let
+      system:
+      let
         lib = pkgs.lib;
-        pkgs = import nixpkgs {inherit system;};
-      in {
+        pkgs = import nixpkgs { inherit system; };
+      in
+      {
         nixosModules = {
           # Full config support of available shells
-          default = import ./nixosModule.nix {inherit pkgs lib;};
+          default = import ./nixosModule.nix { inherit pkgs lib; };
         };
 
         homeManagerModules = {
           # Full config support of available shells
-          default = import ./homeManagerModule.nix {inherit pkgs lib;};
+          default = import ./homeManagerModule.nix { inherit pkgs lib; };
         };
       }
     );
