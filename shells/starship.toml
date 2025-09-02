@@ -69,7 +69,7 @@ truncation_symbol = "…/"
 # So either put "Important Documents" before "Documents" or use the substituted version:
 # "Important 󰈙 " = " 󰈙 "
 
-[nix_shell] = {
+[nix_shell]
 disabled = false
 impure_msg = ""
 symbol = ""
