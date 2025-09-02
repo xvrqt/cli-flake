@@ -2,9 +2,8 @@
 format = """
 [█](#9A348E)\
 $os\
-$username\
 $nix_shell\
-$shlvl\
+$username\
 [](bg:#DA627D fg:#9A348E)\
 $directory\
 [](fg:#DA627D bg:#FCA17D)\
@@ -73,10 +72,12 @@ truncation_symbol = "…/"
 disabled = false
 impure_msg = ""
 symbol = ""
+style = "bg:#9A348E"
 format = "[$symbol$state]($style) "
 
 [shlvl]
 disabled = false
+style = "bg:#9A348E"
 symbol = "λ "
 
 [c]
