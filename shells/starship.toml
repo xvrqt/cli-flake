@@ -73,7 +73,7 @@ disabled = false
 impure_msg = ""
 symbol = ""
 style = "bg:#9A348E"
-format = '[ $symbol ]($style)'
+format = '[$symbol ]($style)'
 
 [shlvl]
 disabled = false
