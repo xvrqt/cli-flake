@@ -14,7 +14,7 @@ let
     "croc"
     "cpufetch"
     "ddh"
-    "delta"
+    # "delta" Moved to programs in normal homeManager
     "dtool"
     "du-dust"
     "funzzy"

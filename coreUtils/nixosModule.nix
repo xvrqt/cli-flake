@@ -39,7 +39,6 @@ let
     "ripgrep"
     "rm-improved"
     "sd"
-    "skim"
     "systeroid"
     "tealdeer"
     "tokei"
@@ -69,6 +68,7 @@ let
     "bandwhich"
     "bat"
     "git"
+    "skim"
     "trippy"
     "zoxide"
   ];

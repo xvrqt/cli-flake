@@ -2,6 +2,7 @@
 format = """
 [█](#9A348E)\
 $os\
+$nix_shell\
 $username\
 [](bg:#DA627D fg:#9A348E)\
 $directory\
@@ -57,15 +58,27 @@ truncation_symbol = "…/"
 # Here is how you can shorten some long paths by text replacement
 # similar to mapped_locations in Oh My Posh:
 [directory.substitutions]
-"Documents" = "󰈙 "
-"Downloads" = " "
-"Music" = " "
-"Pictures" = " "
+"docs" = "󰈙 "
+"downloads" = " "
+"music" = " "
+"pictures" = " "
 # Keep in mind that the order matters. For example:
 # "Important Documents" = " 󰈙 "
 # will not be replaced, because "Documents" was already substituted before.
 # So either put "Important Documents" before "Documents" or use the substituted version:
 # "Important 󰈙 " = " 󰈙 "
+
+[nix_shell]
+disabled = false
+impure_msg = ""
+symbol = ""
+style = "bg:#9A348E"
+format = '[$symbol ]($style)'
+
+[shlvl]
+disabled = false
+style = "bg:#9A348E"
+symbol = "λ "
 
 [c]
 symbol = " "
