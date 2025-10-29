@@ -16,7 +16,7 @@ let
     "ddh"
     "delta"
     "dtool"
-    "du-dust"
+    "dust"
     "eza"
     "fd"
     "funzzy"
