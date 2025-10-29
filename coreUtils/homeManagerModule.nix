@@ -16,7 +16,7 @@ let
     "ddh"
     # "delta" Moved to programs in normal homeManager
     "dtool"
-    "du-dust"
+    "dust"
     "funzzy"
     "glow"
     "grex"
