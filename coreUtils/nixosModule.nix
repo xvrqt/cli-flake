@@ -68,7 +68,6 @@ let
     "bandwhich"
     "bat"
     "git"
-    "skim"
     "trippy"
     "zoxide"
   ];
