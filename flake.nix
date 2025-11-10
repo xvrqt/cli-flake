@@ -1,30 +1,13 @@
 {
-  inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
-    flake-utils.url = "github:numtide/flake-utils";
+  outputs = { ... }: {
+    nixosModules.default = { lib, pkgs, ... }: {
+      # Full config support of available shells
+      imports = [ (import ./nixosModule.nix { inherit pkgs lib; }) ];
+    };
+
+    homeManagerModules.default = { lib, pkgs, ... }: {
+      # Full config support of available shells
+      imports = [ (import ./homeManagerModule.nix { inherit pkgs lib; }) ];
+    };
   };
-
-  outputs =
-    { nixpkgs
-    , flake-utils
-    , ...
-    }:
-    flake-utils.lib.eachDefaultSystem (
-      system:
-      let
-        lib = pkgs.lib;
-        pkgs = import nixpkgs { inherit system; };
-      in
-      {
-        nixosModules = {
-          # Full config support of available shells
-          default = import ./nixosModule.nix { inherit pkgs lib; };
-        };
-
-        homeManagerModules = {
-          # Full config support of available shells
-          default = import ./homeManagerModule.nix { inherit pkgs lib; };
-        };
-      }
-    );
 }

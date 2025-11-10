@@ -1,8 +1,7 @@
 # [](#9A348E)\
 format = """
 [█](#9A348E)\
-$os\
-$nix_shell\
+$hostname\
 $username\
 [](bg:#DA627D fg:#9A348E)\
 $directory\
@@ -37,17 +36,23 @@ $scala\
 # You can also replace your username with a neat symbol like   or disable this
 # and use the os module below
 [username]
-show_always = true
+show_always = false
 style_user = "bg:#9A348E"
 style_root = "bg:#9A348E"
 format = '[$user ]($style)'
+disabled = true
+
+[hostname]
+ssh_only = true
+format = '[$hostname ]($style)'
+style = "bg:#9A348E"
 disabled = false
 
 # An alternative to the username module which displays a symbol that
 # represents the current operating system
 [os]
 style = "bg:#9A348E"
-disabled = true # Disabled by default
+disabled = true      # Disabled by default
 
 [directory]
 style = "bg:#DA627D"
@@ -154,8 +159,7 @@ style = "bg:#86BBD8"
 format = '[ $symbol ($version) ]($style)'
 
 [time]
-disabled = true 
-time_format = "%R" # Hour:Minute Format
+disabled = true
+time_format = "%R"             # Hour:Minute Format
 style = "bg:#33658A"
 format = '[ ♥ $time ]($style)'
-

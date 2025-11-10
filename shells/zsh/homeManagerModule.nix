@@ -1,16 +1,17 @@
 # ZSH Configuration
-{
-  lib,
-  pkgs,
-  config,
-  ...
-}: let
+{ lib
+, pkgs
+, config
+, ...
+}:
+let
   cfgCheck = config.programs.zsh.crowConfig;
-in {
+in
+{
   config = lib.mkIf cfgCheck {
     programs = {
       zsh = {
-        dotDir = ".config/zsh";
+        dotDir = config.home.homeDirectory;
         enableCompletion = true;
         autosuggestion = {
           enable = true;
@@ -60,8 +61,7 @@ in {
         ## ALIASES ##
         #############
 
-        shellGlobalAliases = {
-        };
+        shellGlobalAliases = { };
 
         shellAliases = {
           ## Convenience
@@ -133,7 +133,7 @@ in {
 
     # Needed for the login shell
     home = {
-      packages = [pkgs.hyfetch];
+      packages = [ pkgs.hyfetch ];
     };
   };
 }
