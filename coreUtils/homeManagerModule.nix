@@ -14,7 +14,6 @@ let
     "croc"
     "cpufetch"
     "ddh"
-    # "delta" Moved to programs in normal homeManager
     "dtool"
     "dust"
     "funzzy"
@@ -59,6 +58,7 @@ let
   preconfigured_programs = [
     "bat"
     "bottom"
+    "delta"
     "eza"
     "fd"
     "git"
