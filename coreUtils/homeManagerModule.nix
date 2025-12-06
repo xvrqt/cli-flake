@@ -58,7 +58,7 @@ let
   preconfigured_programs = [
     "bat"
     "bottom"
-    "delta"
+    # "delta"
     "eza"
     "fd"
     "git"
@@ -68,7 +68,7 @@ let
     "ripgrep"
     "skim"
     "tealdeer"
-    "trippy"
+    # "trippy"
     "zoxide"
   ];
   imports = builtins.map (u: ./${u}/homeManagerModule.nix) preconfigured_programs;

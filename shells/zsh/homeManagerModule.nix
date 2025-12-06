@@ -11,7 +11,7 @@ in
   config = lib.mkIf cfgCheck {
     programs = {
       zsh = {
-        dotDir = config.home.homeDirectory;
+        # dotDir = config.home.homeDirectory;
         enableCompletion = true;
         autosuggestion = {
           enable = true;

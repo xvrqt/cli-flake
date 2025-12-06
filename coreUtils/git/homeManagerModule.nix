@@ -9,15 +9,15 @@ in
   config = lib.mkIf config.cli.coreUtils.enable {
     programs.git = {
       enable = setDef true;
-      settings = {
-        user = {
-          email = setDef "git@xvrqt.net";
-          name = setDef "crow";
-        };
-        init = {
-          defaultBranch = "master";
-        };
-      };
+      # settings = {
+      #   user = {
+      #     email = setDef "git@xvrqt.net";
+      #     name = setDef "crow";
+      #   };
+      #   init = {
+      #     defaultBranch = "master";
+      #   };
+      # };
     };
   };
 }
