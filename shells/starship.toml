@@ -43,7 +43,7 @@ format = '[$user ]($style)'
 disabled = true
 
 [hostname]
-ssh_only = true
+ssh_only = false
 format = '[$hostname ]($style)'
 style = "bg:#9A348E"
 disabled = false
