@@ -25,8 +25,8 @@ in
         nil
         nixd
         nixpkgs-fmt
-        nodePackages.prettier
-        nodePackages.typescript-language-server
+        # nodePackages.prettier
+        # nodePackages.typescript-language-server
         sql-formatter
         ruff
         (python3.withPackages (p: (with p; [
